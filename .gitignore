@@ -1,0 +1,9 @@
+.vscode
+legacy
+tests
+
+debug
+target
+
+*.png
+*.graph

@@ -1,0 +1,39 @@
+[package]
+name = "codeflow"
+version = "0.1.0"
+edition = "2021"
+autobins = false
+
+[[bin]]
+name = "codeflow-render"
+path = "src/main.rs"
+
+[[bin]]
+name = "codeflow-extract"
+path = "src/bin/extract_source_flow_graph.rs"
+
+[[bin]]
+name = "codeflow"
+path = "src/bin/codeflow.rs"
+
+[[bin]]
+name = "codeflow-extract-python"
+path = "src/bin/extract_python_flow_graph.rs"
+
+[[bin]]
+name = "codeflow-extract-octave"
+path = "src/bin/extract_octave_flow_graph.rs"
+
+[[bin]]
+name = "codeflow-extract-rust"
+path = "src/bin/extract_rust_flow_graph.rs"
+
+[dependencies]
+anyhow = "1"
+clap = { version = "4", features = ["derive"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+image = "0.25"
+imageproc = "0.25"
+ab_glyph = "0.2"
+regex = "1"
