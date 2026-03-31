@@ -2126,6 +2126,10 @@ fn run_native(cli: &Cli) -> Result<()> {
     let font_data = [
         "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
         "/usr/share/fonts/TTF/DejaVuSans.ttf",
+        "C:/Windows/Fonts/DejaVuSans.ttf",
+        "C:/Windows/Fonts/segoeui.ttf",
+        "C:/Windows/Fonts/arial.ttf",
+        "C:/Windows/Fonts/calibri.ttf",
     ]
     .iter()
     .find_map(|p| fs::read(p).ok())
